@@ -6,7 +6,12 @@ void main() => runApp(MaterialApp(
       title:Text('Hello john'),
       centerTitle: true,
     ),
-        body: Text('I am John wanjema'),
+        body:Center(
+          child: Text('i am john'),
+        ),
+      floatingActionButton:FloatingActionButton(
+        child: Text('Click Me')
+  ),
   )
   ,
 ));
