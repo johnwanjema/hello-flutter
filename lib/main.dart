@@ -5,11 +5,19 @@ void main() => runApp(MaterialApp(
     appBar:AppBar(
       title:Text('Managers App'),
       centerTitle: true,
+      backgroundColor: Colors.red,
     ),
         body:Center(
-          child: Text('i am john'),
+          child: Text(
+            'Hello john',
+            style: TextStyle(
+              fontSize: 20.0
+            ),
+          ),
         ),
       floatingActionButton:FloatingActionButton(
+        onPressed: (){},
+        backgroundColor: Colors.red,
         child: Text('Click')
   ),
   )
