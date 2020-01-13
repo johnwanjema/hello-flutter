@@ -4,7 +4,9 @@ void main() => runApp(MaterialApp(
   home: Scaffold(
     appBar:AppBar(
       title:Text('Hello john'),
-    )
+      centerTitle: true,
+    ),
+        body: Text('I am John wanjema'),
   )
   ,
 ));
