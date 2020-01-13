@@ -14,13 +14,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Text(
-          'Hello John wanjema',
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0),
-        ),
+        child: Image(
+          image: AssetImage('assests/logow.png'),
+        )
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {},
