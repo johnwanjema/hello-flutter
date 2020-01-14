@@ -12,14 +12,11 @@ class Home extends StatelessWidget {
           title: Text('App Bar'),
           centerTitle: true,
         ),
-        body: Center(
-          child: RaisedButton.icon(
-             onPressed: (){},
-            label: Text('mail me'),
-            icon : Icon(
-                Icons.mail
-            )
-          ),
-        ));
+        body:Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.yellowAccent,
+            child: Text('hello'),
+        )
+    );
   }
 }
