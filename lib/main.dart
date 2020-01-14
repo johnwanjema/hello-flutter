@@ -12,19 +12,19 @@ class Home extends StatelessWidget {
           title: Text('App Bar'),
           centerTitle: true,
         ),
-        body:Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly ,
-            crossAxisAlignment: CrossAxisAlignment.center,
+        body:Column(
             children: <Widget>[
-                Text('hello'),
-                FlatButton(
-                    onPressed: (){},
-                    color: Colors.orange,
-                    child: Text('click me'),
+                Container(
+                    child: Text('first column'),
+                    color: Colors.redAccent,
                 ),
                 Container(
+                    child: Text('first column'),
+                    color: Colors.blue,
+                ),
+                Container(
+                    child: Text('first column'),
                     color: Colors.green,
-                    child: Text('i am a conainer'),
                 )
             ],
         ),
