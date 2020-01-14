@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
           centerTitle: true,
         ),
         body:Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly ,
             children: <Widget>[
                 Text('hello'),
                 FlatButton(
