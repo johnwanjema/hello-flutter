@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-      home:Home()
-    ));
+void main() => runApp(MaterialApp(home: Home()));
 
 class Home extends StatelessWidget {
   @override
@@ -14,12 +12,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Image.asset('assests/logow.png'),
-      ),
+          child: FlatButton(
+        onPressed: () {
+        child: Text('Click Me'),
+        color: Colors.red,
+      )),
       floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.red,
-          child: Text('Click me')),
+          onPressed: () {}, backgroundColor: Colors.red, child: Text('Click')),
     );
   }
 }
