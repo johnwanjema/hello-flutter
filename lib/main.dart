@@ -12,11 +12,25 @@ class Home extends StatelessWidget {
           title: Text('App Bar'),
           centerTitle: true,
         ),
-        body:Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.yellowAccent,
-            child: Text('hello'),
-        )
+        body:Row(
+            children: <Widget>[
+                Text('hello'),
+                FlatButton(
+                    onPressed: (){},
+                    color: Colors.orange,
+                    child: Text('click me'),
+                ),
+                Container(
+                    color: Colors.green,
+                    child: Text('i am a conainer'),
+                )
+            ],
+        ),
+        floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text('click'),
+    ),
+
     );
   }
 }
