@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() => runApp(MaterialApp(
       home: Home(),
@@ -18,21 +19,44 @@ class Home extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
             Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                    Text('hello'),
-                    Text('world')
+                    Expanded(
+                        flex: 1,
+                      child: Container(
+                          padding: EdgeInsets.all(20.0),
+                          color:Colors.blue,
+                          child: Text('Hello'),
+                      ),
+                    ),
+                    Expanded(
+                        flex: 1,
+                      child: Container(
+                          padding: EdgeInsets.all(20.0),
+                          color:Colors.blue,
+                          child: Text('hello')),
+                    ),
+                    Expanded(
+                        flex: 1,
+                      child: Container(
+                          padding: EdgeInsets.all(20.0),
+                          color:Colors.blue,
+                          child: Text('world')),
+                    )
                 ],
             ),
           Container(
             padding: EdgeInsets.all(20.0),
-            child: Text('first column'),
-            color: Colors.redAccent,
+            color: Colors.blue,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('first column'),
+            ),
           ),
           Container(
             padding: EdgeInsets.all(20.0),
             child: Text('first column'),
-            color: Colors.blue,
+            color: Colors.redAccent,
           ),
           Container(
             padding: EdgeInsets.all(20.0),
@@ -42,7 +66,9 @@ class Home extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+            print('you clicked me');
+        },
         child: Text('click'),
       ),
     );
